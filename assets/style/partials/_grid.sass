@@ -3,8 +3,8 @@
 @mixin slight-gutter
     padding: 0 15px 0 15px
 
-@mixin c-gutter
-    padding: 12px 15px 12px 15px   
+@mixin c-gutter($p-tb, $p-rl)
+    padding: $p-tb $p-rl $p-tb $p-rl   
 @mixin m-auto
     margin: 0 auto     
     
@@ -31,37 +31,37 @@
 
 .c-12
     width: 100%
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-11
     width: (100% / 12) * 11
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-10
     width: (100% / 12) * 10
-    @include c-gutter   
+    @include c-gutter($p-tb, $p-rl)
 .c-9
     width: (100% / 12) * 9
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-8
     width: (100% / 12) * 8
-    @include c-gutter   
+    @include c-gutter($p-tb, $p-rl)
 .c-7
     width: (100% / 12) * 7
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-6
     width: (100% / 12) * 6
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-5
     width: (100% / 12) * 5
-    @include c-gutter   
+    @include c-gutter($p-tb, $p-rl)
 .c-4
     width: (100% / 12) * 4
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-3
     width: (100% / 12) * 3
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-2
     width: (100% / 12) * 2
-    @include c-gutter
+    @include c-gutter($p-tb, $p-rl)
 .c-1
     width: (100% / 12) * 1
-    @include c-gutter                    
+    @include c-gutter($p-tb, $p-rl)      
