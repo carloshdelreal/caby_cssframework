@@ -1,5 +1,6 @@
 $odin-color: #cc9543
 $title-color: rgba(74,74,74,0.7)
+
 $font-odin: 'Caesar Dressing', cursive
 $font-title: 'Open Sans', sans-serif
 $font-basic: 'Raleway', sans-serif 
@@ -69,6 +70,8 @@ nav .row
 .profile-card
     display: flex
     align-items: center
+    h2
+        color: $title-color
 
 
 .profile
@@ -88,4 +91,22 @@ h1
 h2
     font-size: 24px
 
+main
+    header
+        h1
+            text-align: center
+            color: $odin-color
+            font-weight: 100
+    p
+        color: $title-color
+        line-height: 1.88em
+    a
+        color: $title-color
+        text-decoration: underline
+    a:hover
+        color: black
+        text-decoration: none
 
+.border-shadow
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1)
+    padding: 20px
