@@ -1,0 +1,91 @@
+$odin-color: #cc9543
+$title-color: rgba(74,74,74,0.7)
+$font-odin: 'Caesar Dressing', cursive
+$font-title: 'Open Sans', sans-serif
+$font-basic: 'Raleway', sans-serif 
+
+.row > [class^="c-"]
+    border: none
+    background: none
+
+
+nav .row
+    justify-content: space-between
+    align-items: center
+
+
+.odinlogo>div,
+.links li
+    display: inline-block
+
+.odin-header
+    font-family: $font-odin
+    font-size: 30px
+    text-decoration: none
+    color: $odin-color 
+    
+.links
+    li:nth-of-type(2)
+        border-right: 1px solid #bbb
+        padding-right: 5px
+        margin-right: 5px
+        a
+            display: inline-block
+
+    li:nth-of-type(2) a::after
+        color: $title-color
+        display: inline-block
+        margin-left: 10px
+        vertical-align: 0.255em
+        content: ""
+        border-top: 0.3em solid
+        border-right: 0.3em solid transparent
+        border-bottom: 0
+        border-left: 0.3em solid transparent
+
+    li:last-of-type
+        position: relative
+
+    a
+        font-family: $font-title
+        color: $title-color
+        font-weight: 800
+        padding: 10px
+        
+    a:hover
+        color: black
+
+
+.user-image
+    $header-img: '../img/8964341.jpg'
+    background: url($header-img) 0 0 /cover no-repeat
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    position: absolute
+    top: 0px
+    left: 0px
+
+.profile-card
+    display: flex
+    align-items: center
+
+
+.profile
+    $header-img: '../img/8964341.jpg'
+    background: url($header-img) 0 0 /cover no-repeat
+
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-right: 20px
+
+
+h1
+    font-size: 40px
+
+
+h2
+    font-size: 24px
+
+

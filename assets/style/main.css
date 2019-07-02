@@ -1,57 +1,98 @@
-.row > [class^="c-"]{
-    border: none;
-    background: none;
+.row > [class^="c-"] {
+  border: none;
+  background: none;
 }
 
-nav .row{
-    justify-content: space-between;
-    align-items: center;
+nav .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.odinlogo>div,
-.links li{
-    display: inline-block;
+.odinlogo > div,
+.links li {
+  display: inline-block;
 }
 
-.links li:nth-of-type(2){
-    border-right: 1px solid #bbb;
-    padding-right: 5px;
-    margin-right: 5px;
-}
-.links li:last-of-type{
-    position: relative;
-}
-.user-image{
-    background: 
-        url(../img/8964341.jpg) 0 0 /cover no-repeat;
-    
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    top: -20px;
-    left: 0px;
-}
-.profile-card{
-    display: flex;
-    align-items: center;
+.odin-header {
+  font-family: "Caesar Dressing", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: #cc9543;
 }
 
-.profile{
-    background: 
-        url(../img/8964341.jpg) 0 0 /cover no-repeat;
-
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; 
-    margin-right: 20px;
+.links li:nth-of-type(2) {
+  border-right: 1px solid #bbb;
+  padding-right: 5px;
+  margin-right: 5px;
 }
 
-
-h1{
-    font-size: 40px;
+.links li:nth-of-type(2) a {
+  display: inline-block;
 }
 
-h2{
-    font-size: 24px;
+.links li:nth-of-type(2) a::after {
+  color: rgba(74, 74, 74, 0.7);
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
 }
+
+.links li:last-of-type {
+  position: relative;
+}
+
+.links a {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: 800;
+  padding: 10px;
+}
+
+.links a:hover {
+  color: black;
+}
+
+.user-image {
+  background: url("../img/8964341.jpg") 0 0/cover no-repeat;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile {
+  background: url("../img/8964341.jpg") 0 0/cover no-repeat;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */
