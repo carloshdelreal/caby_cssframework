@@ -1,5 +1,6 @@
 $odin-color: #cc9543
 $title-color: rgba(74,74,74,0.7)
+$border-color: rgba(0,0,0,0.1);
 
 $font-odin: 'Caesar Dressing', cursive
 $font-title: 'Open Sans', sans-serif
@@ -112,9 +113,15 @@ main
         color: black
         text-decoration: none
 
-    .skills
+    .skills,
+    .more-info
         p
             text-align: center
+        a
+            color: $odin-color
+
+        .huge
+            font-size: 35px
 
     .modules
         .mod-img
@@ -126,8 +133,43 @@ main
             box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1)
         h3
             font-size: 20px
-        .mod-details    
+        .mod-details
+            padding: 0 0 0 20px
+
+            a
+                text-decoration: none
+            span
+                color: $title-color
+        .mod-button
+            width: 100%
+            a  
+                widows: 100%
+                display: block
+                background-color: #6abfc3
+                border-radius: 0.2em
+                box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5)
+                color: #fff
+                display: inline-block
+                font-size: 1em
+                font-weight: bold
+                letter-spacing: 0.2px
+                padding: 1rem 3.5rem
+                text-align: center
+                text-decoration: none
+                cursor: pointer
+                border: none
+        article
+            .row
+                border-bottom: 1px solid $border-color
+    .more-info
+        .mod-button
+            a
+                background-color: $odin-color
+
 
 .border-shadow
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1)
+    box-shadow: 0 5px 16px 0 $border-color
     padding: 20px
+    
+.gradient
+    background-image: linear-gradient(to bottom, #fff, #eee);

@@ -127,8 +127,19 @@ main a:hover {
   text-decoration: none;
 }
 
-main .skills p {
+main .skills p,
+main .more-info p {
   text-align: center;
+}
+
+main .skills a,
+main .more-info a {
+  color: #cc9543;
+}
+
+main .skills .huge,
+main .more-info .huge {
+  font-size: 35px;
 }
 
 main .modules .mod-img {
@@ -144,9 +155,57 @@ main .modules h3 {
   font-size: 20px;
 }
 
+main .modules .mod-details {
+  padding: 0 0 0 20px;
+}
+
+main .modules .mod-details a {
+  text-decoration: none;
+}
+
+main .modules .mod-details span {
+  color: rgba(74, 74, 74, 0.7);
+}
+
+main .modules .mod-button {
+  width: 100%;
+}
+
+main .modules .mod-button a {
+  widows: 100%;
+  display: block;
+  background-color: #6abfc3;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+main .modules article .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main .more-info .mod-button a {
+  background-color: #cc9543;
+}
+
 .border-shadow {
   -webkit-box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background-image: linear-gradient(to bottom, #fff, #eee);
 }
 /*# sourceMappingURL=main.css.map */
