@@ -12,16 +12,54 @@ nav .row {
           align-items: center;
 }
 
-.odinlogo > div,
-.links li {
+.odinlogo > div {
   display: inline-block;
+}
+
+.odinlogo > div:nth-of-type(1) a {
+  display: block;
+  width: 45px;
+}
+
+.odinlogo > div:nth-of-type(1) a img {
+  width: 100%;
+}
+
+.display-menu span {
+  width: 22px;
+  height: 2px;
+  margin: 5px 10px 0px 12px;
+  background-color: #6abfc3;
+  display: block;
+}
+
+.links li {
+  display: none;
 }
 
 .odin-header {
   font-family: "Caesar Dressing", cursive;
-  font-size: 30px;
   text-decoration: none;
   color: #cc9543;
+  font-size: 20px;
+}
+
+@media (min-width: 480px) {
+  .odin-header {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .links li {
+    display: inline-block;
+  }
+  .odin-header {
+    font-size: 30px;
+  }
+  .display-menu {
+    display: none;
+  }
 }
 
 .links li:nth-of-type(2) {

@@ -6,6 +6,10 @@ $font-odin: 'Caesar Dressing', cursive
 $font-title: 'Open Sans', sans-serif
 $font-basic: 'Raleway', sans-serif 
 
+$screen-sm: 480px
+$screen-md: 768px
+$screen-lg: 900px
+
 .row > [class^="c-"]
     border: none
     background: none
@@ -16,15 +20,46 @@ nav .row
     align-items: center
 
 
-.odinlogo>div,
-.links li
+.odinlogo>div
     display: inline-block
+    
+    &:nth-of-type(1)
+        a
+            display: block
+            width: 45px
+            img
+                width: 100%
+    
+.display-menu
+    span
+        width: 22px
+        height: 2px
+        margin: 5px 10px 0px 12px
+        background-color: rgb(106, 191, 195)
+        display: block
+
+.links li
+    display: none
 
 .odin-header
     font-family: $font-odin
-    font-size: 30px
     text-decoration: none
     color: $odin-color 
+    font-size: 20px
+
+@media (min-width: $screen-sm)
+    .odin-header
+        font-size: 25px
+
+@media (min-width: $screen-md)
+    .links li
+        display: inline-block
+    
+    .odin-header
+        font-size: 30px
+    .display-menu
+        display: none
+
     
 .links
     li:nth-of-type(2)
@@ -172,4 +207,7 @@ main
     padding: 20px
     
 .gradient
-    background-image: linear-gradient(to bottom, #fff, #eee);
+    background-image: linear-gradient(to bottom, #fff, #eee)
+
+
+
