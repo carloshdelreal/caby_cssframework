@@ -321,4 +321,27 @@ main .more-info .mod-button a {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
   background-image: linear-gradient(to bottom, #fff, #eee);
 }
+
+footer .row > div {
+  text-align: center;
+}
+
+footer .row > div i {
+  font-size: 24px;
+  color: #cc9543;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: left;
+}
+
+footer .odinheader {
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
