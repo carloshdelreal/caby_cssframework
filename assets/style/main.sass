@@ -18,7 +18,14 @@ $screen-lg: 992px
 nav .row
     justify-content: space-between
     align-items: center
+nav
+    position: sticky
+    top: 0
+    background-color: white
 
+@media (min-width: $screen-md)
+    nav
+        position: static
 
 .odinlogo>div
     display: inline-block
@@ -190,6 +197,7 @@ main
                 color: $title-color
         .mod-button
             width: 100%
+            text-align: center
             a  
                 widows: 100%
                 display: block
@@ -209,6 +217,20 @@ main
         article
             .row
                 border-bottom: 1px solid $border-color
+                flex-direction: column
+                div
+                    &:first-child
+                        flex-direction: column
+                        text-align: center
+
+            @media (min-width: $screen-lg)
+                .row
+                    flex-direction: row
+                    div
+                        &:first-child
+                            flex-direction: row
+                            text-align: center
+
     .more-info
         .mod-button
             a

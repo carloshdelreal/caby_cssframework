@@ -12,6 +12,19 @@ nav .row {
           align-items: center;
 }
 
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: static;
+  }
+}
+
 .odinlogo > div {
   display: inline-block;
 }
@@ -240,6 +253,7 @@ main .modules .mod-details span {
 
 main .modules .mod-button {
   width: 100%;
+  text-align: center;
 }
 
 main .modules .mod-button a {
@@ -263,6 +277,34 @@ main .modules .mod-button a {
 
 main .modules article .row {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .modules article .row div:first-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  main .modules article .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .modules article .row div:first-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
 }
 
 main .more-info .mod-button a {
