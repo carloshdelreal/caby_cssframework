@@ -469,6 +469,21 @@ li a:hover {
   padding: 25px 15px 25px 15px;
 }
 
+@media (min-width: 768px) {
+  .column-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .row-sm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 body {
   font-size: 16px;
   font-family: sans-serif, Arial, Helvetica;

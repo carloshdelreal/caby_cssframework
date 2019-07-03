@@ -65,3 +65,12 @@
 .c-1
     width: (100% / 12) * 1
     @include c-gutter($p-tb, $p-rl)      
+
+$layout-breakpoint-small: 768px    
+$layout-breakpoint-large: 992px
+
+@media (min-width: $layout-breakpoint-small)
+  .column-sm
+      flex-direction: column
+  .row-sm
+      flex-direction: row
