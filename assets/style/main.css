@@ -44,7 +44,7 @@ nav .row {
   font-size: 20px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   .odin-header {
     font-size: 25px;
   }
@@ -109,19 +109,6 @@ nav .row {
   left: 0px;
 }
 
-.profile-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profile-card h2 {
-  color: rgba(74, 74, 74, 0.7);
-}
-
 .profile {
   background: url("../img/8964341.jpg") 0 0/cover no-repeat;
   width: 100px;
@@ -142,6 +129,52 @@ main h2,
 main h3 {
   color: rgba(74, 74, 74, 0.7);
   font-weight: bold;
+}
+
+main header .profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .profile-card h2 {
+  color: rgba(74, 74, 74, 0.7);
+}
+
+main header .border-shadow {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main header .border-shadow p {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  main header .profile-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main header .border-shadow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 main header h1 {

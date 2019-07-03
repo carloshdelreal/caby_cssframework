@@ -3,8 +3,8 @@
 @mixin slight-gutter
     padding: 0 15px 0 15px
 
-@mixin c-gutter($p-tb, $p-rl)
-    padding: $p-tb $p-rl $p-tb $p-rl   
+@mixin c-gutter
+    padding: $p-t $p-r $p-b $p-l   
 @mixin m-auto
     margin: 0 auto     
     
@@ -31,46 +31,155 @@
 
 .c-12
     width: 100%
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-11
     width: (100% / 12) * 11
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-10
     width: (100% / 12) * 10
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-9
     width: (100% / 12) * 9
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-8
     width: (100% / 12) * 8
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-7
     width: (100% / 12) * 7
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-6
     width: (100% / 12) * 6
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-5
     width: (100% / 12) * 5
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-4
     width: (100% / 12) * 4
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-3
     width: (100% / 12) * 3
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-2
     width: (100% / 12) * 2
-    @include c-gutter($p-tb, $p-rl)
+    @include c-gutter
 .c-1
     width: (100% / 12) * 1
-    @include c-gutter($p-tb, $p-rl)      
+    @include c-gutter      
 
-$layout-breakpoint-small: 768px    
+$layout-breakpoint-sm: 450px    
+$layout-breakpoint-medium: 768px    
 $layout-breakpoint-large: 992px
 
-@media (min-width: $layout-breakpoint-small)
-  .column-sm
-      flex-direction: column
-  .row-sm
-      flex-direction: row
+@media (min-width: $layout-breakpoint-sm)
+    .c-sm-12
+        width: 100%
+        @include c-gutter
+    .c-sm-11
+        width: (100% / 12) * 11
+        @include c-gutter
+    .c-sm-10
+        width: (100% / 12) * 10
+        @include c-gutter
+    .c-sm-9
+        width: (100% / 12) * 9
+        @include c-gutter
+    .c-sm-8
+        width: (100% / 12) * 8
+        @include c-gutter
+    .c-sm-7
+        width: (100% / 12) * 7
+        @include c-gutter
+    .c-sm-6
+        width: (100% / 12) * 6
+        @include c-gutter
+    .c-sm-5
+        width: (100% / 12) * 5
+        @include c-gutter
+    .c-sm-4
+        width: (100% / 12) * 4
+        @include c-gutter
+    .c-sm-3
+        width: (100% / 12) * 3
+        @include c-gutter
+    .c-sm-2
+        width: (100% / 12) * 2
+        @include c-gutter
+    .c-sm-1
+        width: (100% / 12) * 1
+        @include c-gutter   
+
+@media (min-width: $layout-breakpoint-medium)
+    .c-md-12
+        width: 100%
+        @include c-gutter
+    .c-md-11
+        width: (100% / 12) * 11
+        @include c-gutter
+    .c-md-10
+        width: (100% / 12) * 10
+        @include c-gutter
+    .c-md-9
+        width: (100% / 12) * 9
+        @include c-gutter
+    .c-md-8
+        width: (100% / 12) * 8
+        @include c-gutter
+    .c-md-7
+        width: (100% / 12) * 7
+        @include c-gutter
+    .c-md-6
+        width: (100% / 12) * 6
+        @include c-gutter
+    .c-md-5
+        width: (100% / 12) * 5
+        @include c-gutter
+    .c-md-4
+        width: (100% / 12) * 4
+        @include c-gutter
+    .c-md-3
+        width: (100% / 12) * 3
+        @include c-gutter
+    .c-md-2
+        width: (100% / 12) * 2
+        @include c-gutter
+    .c-md-1
+        width: (100% / 12) * 1
+        @include c-gutter   
+    
+@media (min-width: $layout-breakpoint-large)
+    .c-lg-12
+        width: 100%
+        @include c-gutter
+    .c-lg-11
+        width: (100% / 12) * 11
+        @include c-gutter
+    .c-lg-10
+        width: (100% / 12) * 10
+        @include c-gutter
+    .c-lg-9
+        width: (100% / 12) * 9
+        @include c-gutter
+    .c-lg-8
+        width: (100% / 12) * 8
+        @include c-gutter
+    .c-lg-7
+        width: (100% / 12) * 7
+        @include c-gutter
+    .c-lg-6
+        width: (100% / 12) * 6
+        @include c-gutter
+    .c-lg-5
+        width: (100% / 12) * 5
+        @include c-gutter
+    .c-lg-4
+        width: (100% / 12) * 4
+        @include c-gutter
+    .c-lg-3
+        width: (100% / 12) * 3
+        @include c-gutter
+    .c-lg-2
+        width: (100% / 12) * 2
+        @include c-gutter
+    .c-lg-1
+        width: (100% / 12) * 1
+        @include c-gutter   

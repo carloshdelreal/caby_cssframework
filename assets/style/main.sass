@@ -6,9 +6,9 @@ $font-odin: 'Caesar Dressing', cursive
 $font-title: 'Open Sans', sans-serif
 $font-basic: 'Raleway', sans-serif 
 
-$screen-sm: 480px
+$screen-sm: 450px
 $screen-md: 768px
-$screen-lg: 900px
+$screen-lg: 992px
 
 .row > [class^="c-"]
     border: none
@@ -92,7 +92,6 @@ nav .row
     a:hover
         color: black
 
-
 .user-image
     $header-img: '../img/8964341.jpg'
     background: url($header-img) 0 0 /cover no-repeat
@@ -103,11 +102,7 @@ nav .row
     top: 0px
     left: 0px
 
-.profile-card
-    display: flex
-    align-items: center
-    h2
-        color: $title-color
+         
 
 
 .profile
@@ -134,6 +129,24 @@ main
         font-weight: bold
 
     header
+        .profile-card
+            display: flex
+            flex-direction: column
+            align-items: center
+            h2
+                color: $title-color
+        .border-shadow
+            flex-direction: column
+            align-items: center
+            p
+                text-align: center
+
+
+        @media (min-width: $screen-lg)
+            .profile-card
+                flex-direction: row
+            .border-shadow
+                flex-direction: row
         h1
             text-align: center
             color: $odin-color
