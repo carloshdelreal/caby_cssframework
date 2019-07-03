@@ -322,6 +322,10 @@ main .more-info .mod-button a {
   background-image: linear-gradient(to bottom, #fff, #eee);
 }
 
+footer {
+  padding: 30px 0;
+}
+
 footer .row > div {
   text-align: center;
 }
@@ -341,7 +345,8 @@ footer a {
   text-align: left;
 }
 
-footer .odinheader {
+footer .odin-header {
   font-size: 20px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */
