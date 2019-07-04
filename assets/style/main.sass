@@ -1,11 +1,266 @@
-$color1: #f72210
-$color2: #333
+$odin-color: #cc9543
+$title-color: rgba(74,74,74,0.7)
+$border-color: rgba(0,0,0,0.1);
 
-@import partials/reset
+$font-odin: 'Caesar Dressing', cursive
+$font-title: 'Open Sans', sans-serif
+$font-basic: 'Raleway', sans-serif 
 
-article
-    background-color: $color1
+$screen-sm: 450px
+$screen-md: 768px
+$screen-lg: 992px
 
-ul
-    color: $color1    
+.row > [class^="c-"]
+    border: none
+    background: none
+
+
+nav .row
+    justify-content: space-between
+    align-items: center
+nav
+    position: sticky
+    top: 0
+    background-color: white
+
+@media (min-width: $screen-md)
+    nav
+        position: static
+
+.odinlogo>div
+    display: inline-block
+    
+    &:nth-of-type(1)
+        a
+            display: block
+            width: 45px
+            img
+                width: 100%
+    
+.display-menu
+    span
+        width: 22px
+        height: 2px
+        margin: 5px 10px 0px 12px
+        background-color: rgb(106, 191, 195)
+        display: block
+
+.links li
+    display: none
+
+.odin-header
+    font-family: $font-odin
+    text-decoration: none
+    color: $odin-color 
+    font-size: 20px
+
+@media (min-width: $screen-sm)
+    .odin-header
+        font-size: 25px
+
+@media (min-width: $screen-md)
+    .links li
+        display: inline-block
+    
+    .odin-header
+        font-size: 30px
+    .display-menu
+        display: none
+
+    
+.links
+    li:nth-of-type(2)
+        border-right: 1px solid #bbb
+        padding-right: 5px
+        margin-right: 5px
+        a
+            display: inline-block
+
+    li:nth-of-type(2) a::after
+        color: $title-color
+        display: inline-block
+        margin-left: 10px
+        vertical-align: 0.255em
+        content: ""
+        border-top: 0.3em solid
+        border-right: 0.3em solid transparent
+        border-bottom: 0
+        border-left: 0.3em solid transparent
+
+    li:last-of-type
+        position: relative
+
+    a
+        font-family: $font-title
+        color: $title-color
+        font-weight: 800
+        padding: 10px
+        
+    a:hover
+        color: black
+
+.user-image
+    $header-img: '../img/8964341.jpg'
+    background: url($header-img) 0 0 /cover no-repeat
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    position: absolute
+    top: 0px
+    left: 0px
+
+         
+
+
+.profile
+    $header-img: '../img/8964341.jpg'
+    background: url($header-img) 0 0 /cover no-repeat
+
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    margin-right: 20px
+
+
+h1
+    font-size: 40px
+
+
+h2
+    font-size: 24px
+
+main
+    h2, 
+    h3
+        color: $title-color
+        font-weight: bold
+
+    header
+        .profile-card
+            display: flex
+            flex-direction: column
+            align-items: center
+            h2
+                color: $title-color
+        .border-shadow
+            flex-direction: column
+            align-items: center
+            p
+                text-align: center
+
+
+        @media (min-width: $screen-lg)
+            .profile-card
+                flex-direction: row
+            .border-shadow
+                flex-direction: row
+        h1
+            text-align: center
+            color: $odin-color
+            font-weight: 100
+    p
+        color: $title-color
+        line-height: 1.88em
+    a
+        color: $title-color
+        text-decoration: underline
+    a:hover
+        color: black
+        text-decoration: none
+
+    .skills,
+    .more-info
+        p
+            text-align: center
+        a
+            color: $odin-color
+
+        .huge
+            font-size: 35px
+
+    .modules
+        .mod-img
+            $header-img: '../img/badge.svg'
+            background: url($header-img) 50% / 80% no-repeat
+            border-radius: 50%
+            width: 110px
+            height: 110px
+            box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1)
+        h3
+            font-size: 20px
+        .mod-details
+            padding: 0 0 0 20px
+
+            a
+                text-decoration: none
+            span
+                color: $title-color
+        .mod-button
+            width: 100%
+            text-align: center
+            a  
+                widows: 100%
+                display: block
+                background-color: #6abfc3
+                border-radius: 0.2em
+                box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5)
+                color: #fff
+                display: inline-block
+                font-size: 1em
+                font-weight: bold
+                letter-spacing: 0.2px
+                padding: 1rem 3.5rem
+                text-align: center
+                text-decoration: none
+                cursor: pointer
+                border: none
+        article
+            .row
+                border-bottom: 1px solid $border-color
+                flex-direction: column
+                div
+                    &:first-child
+                        flex-direction: column
+                        text-align: center
+
+            @media (min-width: $screen-lg)
+                .row
+                    flex-direction: row
+                    div
+                        &:first-child
+                            flex-direction: row
+                            text-align: center
+
+    .more-info
+        .mod-button
+            a
+                background-color: $odin-color
+
+
+.border-shadow
+    box-shadow: 0 5px 16px 0 $border-color
+    padding: 20px
+    
+.gradient
+    background-image: linear-gradient(to bottom, #fff, #eee)
+
+footer
+    padding: 30px 0
+
+    .row>div
+        text-align: center
+        i
+            font-size: 24px
+            color: $odin-color
+    a
+        text-decoration: none
+        color: $title-color
+        font-weight: bold
+        flex-grow: 1
+        text-align: left
+        
+    .odin-header
+        font-size: 20px
+        font-weight: normal
+
 

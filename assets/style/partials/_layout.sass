@@ -1,0 +1,67 @@
+body
+    font-size: 16px
+    font-family: $gabyfontscheme
+*, ::after, ::before
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+h1
+    margin: 30px 0 15px 0
+    font-size: 3rem
+    color: $titlecolor
+h2
+    font-size: 2.5rem
+    margin: 20px 0 10px 0
+    color: lighten( $titlecolor, 10% )
+h3
+    font-size: 2rem
+    margin: 16px 0 8px 0
+    color: lighten( $titlecolor, 15% )
+h4
+    font-size: 1.8rem
+    margin: 12px 0 7px 0
+    color: lighten( $titlecolor, 17% )
+h5
+    font-size: 1.6rem
+    margin: 10px 0 5px 0
+    color: lighten( $titlecolor, 21% )
+h6
+    font-size: 1.4rem
+    margin: 8px 0 3px 0
+    color: lighten( $titlecolor, 25% )
+
+.row>[class^="c-"]
+    background-color: $column-bg-color
+    border: 1px solid $column-border-color
+
+div[class*="row"]
+    padding: 10px 0 20px 0
+
+.bg-1
+    background-color: $backgroundcolor1
+
+.bg-2
+    background-color: $backgroundcolor2
+
+.bg-3
+    background-color: $backgroundcolor3
+    
+// flex classes
+.flex-container
+     display: flex  
+
+.center-content
+    justify-content: center 
+
+.items-center
+    align-items: center
+
+.space-btw  
+    justify-content: space-between
+
+.h-direction
+    flex-direction: row
+
+.v-direction
+    flex-direction: column                  
